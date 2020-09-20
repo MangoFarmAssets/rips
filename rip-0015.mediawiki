@@ -42,7 +42,7 @@ As described [https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peering
 
 ==RVN Peer Information==
 
-IPFS nodes available for peering connections are as follows:
+RVN-related IPFS nodes available for peering connections are as follows:
 
 '''gateway.ravencoinipfs.com and gateway.mangofarmassets.com'''
 
