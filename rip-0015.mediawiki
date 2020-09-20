@@ -40,7 +40,7 @@ As described [https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peering
 }
 </pre>
 
-==Peer Information==
+==RVN Peer Information==
 
 IPFS nodes available for peering connections are as follows:
 
