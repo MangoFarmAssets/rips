@@ -1,0 +1,68 @@
+<pre>
+RIP: 15
+Title: Improve IPFS Peering
+Authors: The Mango Farm Team
+Comments-Summary: no comments
+Comments-URI: https://github.com/RavenProject/rips
+Status: Draft
+Type: Process
+Created: 2020-09-20
+</pre>
+
+==Abstract==
+
+IPFS version 0.6.0 has a new peering feature that allows any IPFS node to connect to a set of nodes on a more persistent basis than IPFS's previous swarm connect and bootstrap features.  In order to peer together, IPFS nodes must know the peer ID and other information about nodes they wish to connect to in order to connect.  This information may not be widely available, if it is published at all.
+
+This RIP proposes to serve as a repository for RVN-related IPFS nodes to publish their peering information, so that they can peer with each other and so that other nodes can connect directly with them.
+
+==Motivation==
+IPFS functionality is critical to the creation of RVN assets, but participants in the Ravencoin network who run IPFS nodes may have difficulty pulling files pinned on other nodes without robust peering connections among the RVN-related nodes in the network.  Ravenland and Mango Farm have published their information on websites and have swarm connected with one another on an ad-hoc basis, but it would benefit all to have a single location in the RVN Github repo for IPFS nodes to publish their peering information to facilitate futher connections as new projects come about.
+
+==Peering on IPFS==
+
+As described [https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peering here], IPFS's new peering feature allows nodes to persistently peer by specifying information in each node's config file JSON, as follows:
+
+<pre>
+{
+  "Peering": {
+    "Peers": [
+      {
+        "Addrs": ["/ip4/18.1.1.1/tcp/4001"],
+         "ID": "QmPeerID1"
+      },
+      {
+        "Addrs": ["/ip4/18.1.1.2/tcp/4001", "/ip4/18.1.1.2/udp/4001/quic"]
+        "ID": "QmPeerID2"
+      }
+    ]
+  }
+  ...
+}
+</pre>
+
+==Peer Information==
+
+IPFS nodes available for peering connections are as follows:
+
+'''gateway.ravencoinipfs.com and gateway.mangofarmassets.com'''
+
+<pre>
+      {
+        "Addrs": [
+          "/ip4/3.214.126.159/tcp/4001",
+          "/ip4/3.214.126.159/udp/4001/quic"
+        ],
+        "ID": "QmReEgiWTxCUpgYZARCLZCmoWpwP2A3Z3Le8q2Ye5Zb64d"
+      }
+</pre>
+
+'''RavencoinIPFS.com'''
+<pre>
+      {
+        "Addrs": [
+          "/ip4/54.160.162.24/tcp/4001",
+          "/ip4/54.160.162.24/udp/4001/quic"
+        ],
+        "ID": "Qmc4LFwVp5Lt2vL1ogsvtWJggnDSuKTJY96eDxUYg8Nmoe"
+      }
+</pre>
