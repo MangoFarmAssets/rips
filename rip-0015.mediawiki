@@ -11,7 +11,7 @@ Created: 2020-09-20
 
 ==Abstract==
 
-IPFS version 0.6.0 has a new peering feature that allows any IPFS node to connect to a set of nodes on a more persistent basis than IPFS's previous swarm connect and bootstrap features.  In order to peer together, IPFS nodes must know the peer ID and other information about nodes they wish to connect to in order to connect.  This information may not be widely available, if it is published at all.
+IPFS version 0.6.0 has a new peering feature that allows any IPFS node to connect to a set of nodes on a more persistent basis than IPFS's previous swarm connect and bootstrap features.  In order to peer together, IPFS nodes must know the peer ID and other information about nodes they wish to persistently connect to.  This information may not be widely available, if it is published at all.
 
 This RIP proposes to serve as a repository for RVN-related IPFS nodes to publish their peering information, so that they can peer with each other and so that other nodes can connect directly with them.
 
